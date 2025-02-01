@@ -2,36 +2,36 @@ require('lazy').setup({
   'tpope/vim-sleuth',
   'mluders/comfy-line-numbers.nvim',
   
-  require 'kickstart/plugins/surround',
-  require 'kickstart/plugins/snippets',
-  require 'kickstart/plugins/harpoon',
+  require 'mercury/plugins/surround',
+  require 'mercury/plugins/snippets',
+  require 'mercury/plugins/harpoon',
 
-  require 'kickstart/plugins/gitsigns',
+  require 'mercury/plugins/gitsigns',
 
-  require 'kickstart/plugins/telescope',
+  require 'mercury/plugins/telescope',
 
-  require 'kickstart/plugins/indent_line',
+  require 'mercury/plugins/indent_line',
 
-  require 'kickstart/plugins/lspconfig',
+  require 'mercury/plugins/lspconfig',
 
-  require 'kickstart/plugins/conform',
+  require 'mercury/plugins/conform',
 
-  require 'kickstart/plugins/cmp',
+  require 'mercury/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  require 'mercury/plugins/tokyonight',
 
-  require 'kickstart/plugins/todo-comments',
+  require 'mercury/plugins/todo-comments',
 
-  require 'kickstart/plugins/mini',
+  require 'mercury/plugins/mini',
 
-  require 'kickstart/plugins/treesitter',
+  require 'mercury/plugins/treesitter',
 
-  require 'kickstart/plugins/autopairs',
+  require 'mercury/plugins/autopairs',
 
-  require 'kickstart.plugins.neo-tree',
+  require 'mercury.plugins.neo-tree',
 
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.lint',
+  -- require 'mercury.plugins.debug',
+  -- require 'mercury.plugins.lint',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
