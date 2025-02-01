@@ -1,6 +1,6 @@
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- Diagnostic keymaps
+-- Diagnostic "keymaps"
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
@@ -44,7 +44,7 @@ vim.keymap.set('n', '<C-a>', 'gg0VG')
 
 -- basic github actions (add, commit and push)
 
--- Git Add: Allows specifying file(s) or directories
+-- Git Add: Allows specifying file or directories
 vim.api.nvim_set_keymap('n', '<leader>ga', ':!git add ', { noremap = true, silent = true })
 
 -- Git Commit: Allows specifying the commit message

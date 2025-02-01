@@ -12,7 +12,6 @@ require 'lazy-bootstrap'
 
 require 'lazy-plugins'
 
--- to run csharp program right from nvim
 vim.api.nvim_create_user_command('Runcs', function()
   local file_dir = vim.fn.expand '%:p:h'
   local cmd = 'cd ' .. file_dir .. ' && dotnet run'
