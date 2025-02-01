@@ -42,7 +42,13 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Map Ctrl+1 in normal mode to select all text in the buffer
 vim.keymap.set('n', '<C-a>', 'gg0VG')
 
--- github basic actions
-vim.api.nvim_set_keymap('n', '<leader>ga', ':!git add .<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>gc', ':!git commit -m "Update"<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>gp', ':!git push origin main<CR>', { noremap = true, silent = true })
+-- basic github actions (add, commit and push)
+
+-- Git Add: Allows specifying file(s) or directories
+vim.api.nvim_set_keymap('n', '<leader>ga', ':!git add ', { noremap = true, silent = true })
+
+-- Git Commit: Allows specifying the commit message
+vim.api.nvim_set_keymap('n', '<leader>gc', ':!git commit -m ""<Left>', { noremap = true, silent = true })
+
+-- Git Push: Allows specifying the remote and branch
+vim.api.nvim_set_keymap('n', '<leader>gp', ':!git push ', { noremap = true, silent = true })
