@@ -39,4 +39,3 @@ return {
     end, { desc = 'Navigate to next harpoon file' })
   end,
 }
-
