@@ -1,6 +1,3 @@
--- Neo-tree is a Neovim plugin to browse the file system
--- https://github.com/nvim-neo-tree/neo-tree.nvim
-
 return {
   'nvim-neo-tree/neo-tree.nvim',
   version = '*',
@@ -19,12 +16,12 @@ return {
         mappings = {
           ['\\'] = 'close_window',
         },
-        position = "left",
+        position = 'left',
         width = 30,
       },
     },
     window = {
-      position = "left",
+      position = 'left',
       width = 30,
       mapping_options = {
         noremap = true,
@@ -33,14 +30,14 @@ return {
     },
     default_component_configs = {
       container = {
-        enable_character_fade = true
+        enable_character_fade = true,
       },
     },
   },
   config = function(_, opts)
-    require("neo-tree").setup(opts)
-    vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NeoTreeEndOfBuffer", { bg = "none" })
+    require('neo-tree').setup(opts)
+    vim.api.nvim_set_hl(0, 'NeoTreeNormal', { bg = 'none' })
+    vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { bg = 'none' })
+    vim.api.nvim_set_hl(0, 'NeoTreeEndOfBuffer', { bg = 'none' })
   end,
 }

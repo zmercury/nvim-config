@@ -34,14 +34,15 @@ vim.api.nvim_create_user_command('Createcs', function()
   end
 end, { nargs = 0 })
 
--- Function to open terminal in the current file's directory
-local function open_terminal_in_current_dir()
+-- Function to open PowerShell in the current file's directory
+local function open_powershell_in_current_dir()
   local current_file_dir = vim.fn.expand '%:p:h'
   vim.cmd('lcd ' .. current_file_dir)
-  vim.cmd 'terminal'
+  vim.cmd('silent !start powershell.exe -NoExit -Command "cd \'' .. current_file_dir .. '\'"')
 end
 
 -- Command :Term to call the function
-vim.api.nvim_create_user_command('Term', open_terminal_in_current_dir, {})
+vim.api.nvim_create_user_command('Term', open_powershell_in_current_dir, {})
 
+-- Your existing keymap setup
 vim.keymap.set('n', '$$', '$A', { noremap = true, silent = true })
