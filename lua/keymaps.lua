@@ -1,5 +1,7 @@
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.api.nvim_set_keymap('n', '<leader>e', ':Explore<CR>', { noremap = true, silent = true })
+
 -- Diagnostic "keymaps"
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
@@ -39,7 +41,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- Map Ctrl+1 in normal mode to select all text in the buffer
+-- Map Ctrl+a in normal mode to select all text in the buffer
 vim.keymap.set('n', '<C-a>', 'gg0VG')
 
 -- basic github actions (add, commit and push)
