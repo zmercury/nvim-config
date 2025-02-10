@@ -58,3 +58,4 @@ vim.api.nvim_create_user_command('Term', open_powershell_in_current_dir, {})
 
 -- Your existing keymap setup
 vim.keymap.set('n', '$$', '$A', { noremap = true, silent = true })
+vim.keymap.set('i', '$$', '<ESC>A', { noremap = true, silent = true })

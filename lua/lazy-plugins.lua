@@ -1,13 +1,14 @@
 require('lazy').setup({
   'tpope/vim-sleuth',
   'mluders/comfy-line-numbers.nvim',
-  
+
   require 'mercury/plugins/surround',
   require 'mercury/plugins/snippets',
   require 'mercury/plugins/harpoon',
 
   require 'mercury/plugins/gitsigns',
 
+  require 'mercury/plugins/markdown',
   require 'mercury/plugins/telescope',
 
   require 'mercury/plugins/indent_line',
