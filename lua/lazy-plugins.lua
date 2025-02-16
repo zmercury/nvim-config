@@ -3,9 +3,9 @@ require('lazy').setup({
   'mluders/comfy-line-numbers.nvim',
 
   require 'mercury/plugins/surround',
-  require 'mercury/plugins/neocodeium',
   require 'mercury/plugins/snippets',
   require 'mercury/plugins/harpoon',
+  require 'mercury/plugins/codeium',
 
   require 'mercury/plugins/gitsigns',
 
