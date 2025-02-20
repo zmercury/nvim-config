@@ -6,33 +6,21 @@ require('lazy').setup({
   require 'mercury/plugins/snippets',
   require 'mercury/plugins/harpoon',
   require 'mercury/plugins/codeium',
-
+  require 'mercury/plugins/lualine',
   require 'mercury/plugins/gitsigns',
-
   require 'mercury/plugins/markdown',
   require 'mercury/plugins/telescope',
-
   require 'mercury/plugins/indent_line',
-
   require 'mercury/plugins/lspconfig',
-
   require 'mercury/plugins/conform',
-
   require 'mercury/plugins/cmp',
-
   require 'mercury/plugins/tokyonight',
-
   require 'mercury/plugins/todo-comments',
-
   require 'mercury/plugins/mini',
-
   require 'mercury/plugins/treesitter',
-
   require 'mercury/plugins/autopairs',
-
   require 'mercury.plugins.neo-tree',
-
-  -- require 'mercury.plugins.debug',
+  require 'mercury.plugins.debug',
   -- require 'mercury.plugins.lint',
 }, {
   ui = {
