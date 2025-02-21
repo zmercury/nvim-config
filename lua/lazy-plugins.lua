@@ -4,10 +4,8 @@ require('lazy').setup({
 
   require 'mercury/plugins/surround',
   require 'mercury/plugins/snippets',
-  require 'mercury/plugins/codeium',
   require 'mercury/plugins/harpoon',
-  require 'mercury/plugins/codeium',
-  -- require 'mercury/plugins/lualine',
+  require 'mercury/plugins/lualine',
   require 'mercury/plugins/gitsigns',
   require 'mercury/plugins/markdown',
   require 'mercury/plugins/telescope',
