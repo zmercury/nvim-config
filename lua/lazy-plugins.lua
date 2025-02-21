@@ -4,9 +4,10 @@ require('lazy').setup({
 
   require 'mercury/plugins/surround',
   require 'mercury/plugins/snippets',
+  require 'mercury/plugins/codeium',
   require 'mercury/plugins/harpoon',
   require 'mercury/plugins/codeium',
-  require 'mercury/plugins/lualine',
+  -- require 'mercury/plugins/lualine',
   require 'mercury/plugins/gitsigns',
   require 'mercury/plugins/markdown',
   require 'mercury/plugins/telescope',
@@ -20,7 +21,7 @@ require('lazy').setup({
   require 'mercury/plugins/treesitter',
   require 'mercury/plugins/autopairs',
   require 'mercury.plugins.neo-tree',
-  require 'mercury.plugins.debug',
+  -- require 'mercury.plugins.debug',
   -- require 'mercury.plugins.lint',
 }, {
   ui = {

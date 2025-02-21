@@ -24,7 +24,10 @@ vim.opt.signcolumn = 'yes'
 
 vim.opt.updatetime = 250
 
-vim.opt.timeoutlen = 300
+-- Reduce timeout for key sequences
+vim.opt.timeout = true
+vim.opt.timeoutlen = 200
+vim.opt.ttimeoutlen = 10
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true

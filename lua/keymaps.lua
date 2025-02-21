@@ -1,4 +1,12 @@
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', function()
+    if vim.fn.getcmdtype() == '/' or vim.fn.getcmdtype() == '?' then
+        return '<Esc>'
+    else
+        return '<cmd>nohlsearch<CR>'
+    end
+end, { expr = true })
+
+vim.keymap.set('i', '<Esc>', '<Esc>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<leader>e', ':Explore<CR>', { noremap = true, silent = true })
 
@@ -54,3 +62,6 @@ vim.api.nvim_set_keymap('n', '<leader>gc', ':!git commit -m ""<Left>', { noremap
 
 -- Git Push: Allows specifying the remote and branch
 vim.api.nvim_set_keymap('n', '<leader>gp', ':!git push ', { noremap = true, silent = true })
+
+-- Open a new terminal session
+vim.keymap.set('n', '<leader>wt', ':!wt -w 0 nt<CR>', { noremap = true, silent = true })
