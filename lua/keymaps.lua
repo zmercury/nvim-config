@@ -56,8 +56,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- Map Ctrl+a in normal mode to select all text in the buffer
 vim.keymap.set('n', '<C-a>', 'gg0VG')
 
--- basic github actions (add, commit and push)
-
 -- Git Add: Allows specifying file or directories
 vim.api.nvim_set_keymap('n', '<leader>ga', ':!git add ', { noremap = true, silent = true })
 
@@ -70,4 +68,6 @@ vim.api.nvim_set_keymap('n', '<leader>gp', ':!git push ', { noremap = true, sile
 -- Open a new terminal session
 vim.keymap.set('n', '<leader>wt', ':!wt -w 0 nt<CR>', { noremap = true, silent = true })
 
-
+-- Your existing keymap setup
+vim.keymap.set('n', '$$', '$A', { noremap = true, silent = true })
+vim.keymap.set('i', '$$', '<ESC>A', { noremap = true, silent = true })
