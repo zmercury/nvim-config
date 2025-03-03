@@ -69,3 +69,5 @@ vim.api.nvim_set_keymap('n', '<leader>gp', ':!git push ', { noremap = true, sile
 
 -- Open a new terminal session
 vim.keymap.set('n', '<leader>wt', ':!wt -w 0 nt<CR>', { noremap = true, silent = true })
+
+
