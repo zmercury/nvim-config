@@ -14,6 +14,7 @@ require('lazy').setup({
   require 'mercury/plugins/conform',
   require 'mercury/plugins/cmp',
   require 'mercury/plugins/tokyonight',
+  --require 'mercury/plugins/cyberdream',
   require 'mercury/plugins/todo-comments',
   require 'mercury/plugins/mini',
   require 'mercury/plugins/treesitter',
