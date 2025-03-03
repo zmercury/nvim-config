@@ -79,6 +79,7 @@ return {
               ['n'] = {
                 ['c'] = require('telescope').extensions.file_browser.actions.create,
                 ['r'] = require('telescope').extensions.file_browser.actions.rename,
+                ['d'] = require('telescope').extensions.file_browser.actions.remove,
               },
             },
           },
