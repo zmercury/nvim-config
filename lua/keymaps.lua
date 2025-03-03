@@ -6,7 +6,7 @@ vim.keymap.set('n', '<Esc>', function()
   end
 end, { expr = true })
 
-vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>', { noremap = true, silent = true, desc = 'Open file browser' })
+vim.keymap.set('n', '<leader>ww', ':Telescope file_browser<CR>', { noremap = true, silent = true, desc = 'Open file browser' })
 
 vim.keymap.set('i', '<Esc>', '<Esc>', { noremap = true })
 
