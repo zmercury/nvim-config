@@ -38,3 +38,6 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 
 vim.opt.cursorline = false
+
+-- Netrw settings
+vim.g.netrw_banner = 0
