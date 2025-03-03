@@ -33,6 +33,8 @@ return {
       vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'VertSplit', { bg = 'none' })
 
+      vim.api.nvim_set_hl(0, 'Directory', { fg = '#2a9d8f' })
+
       -- Ensure transparency persists after colorscheme changes
       vim.api.nvim_create_autocmd('ColorScheme', {
         pattern = '*',
