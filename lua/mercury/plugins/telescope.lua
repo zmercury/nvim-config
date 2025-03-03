@@ -110,5 +110,32 @@ return {
       end, { desc = '[S]earch [N]eovim files' })
     end,
   },
+
+  {
+    'nvim-telescope/telescope-file-browser.nvim',
+    dependencies = { 'nvim-telescope/telescope.nvim' },
+    config = function()
+      -- Load the extension
+      require('telescope').load_extension 'file_browser'
+
+      -- Optional: Configure file browser
+      require('telescope').setup {
+        extensions = {
+          file_browser = {
+            theme = 'ivy', -- Try "dropdown" or "cursor" if you prefer
+            hijack_netrw = true, -- Replaces netrw when opening directories
+            mappings = {
+              ['i'] = {
+                ['<C-n>'] = require('telescope').extensions.file_browser.actions.create,
+              },
+              ['n'] = {
+                ['c'] = require('telescope').extensions.file_browser.actions.create,
+                ['r'] = require('telescope').extensions.file_browser.actions.rename,
+              },
+            },
+          },
+        },
+      }
+    end,
+  },
 }
--- vim: ts=2 sts=2 sw=2 et

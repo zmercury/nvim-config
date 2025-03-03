@@ -1,12 +1,16 @@
 vim.keymap.set('n', '<Esc>', function()
-    if vim.fn.getcmdtype() == '/' or vim.fn.getcmdtype() == '?' then
-        return '<Esc>'
-    else
-        return '<cmd>nohlsearch<CR>'
-    end
+  if vim.fn.getcmdtype() == '/' or vim.fn.getcmdtype() == '?' then
+    return '<Esc>'
+  else
+    return '<cmd>nohlsearch<CR>'
+  end
 end, { expr = true })
 
+vim.keymap.set('n', '<leader>fb', ':Telescope file_browser<CR>', { noremap = true, silent = true, desc = 'Open file browser' })
+
 vim.keymap.set('i', '<Esc>', '<Esc>', { noremap = true })
+
+vim.g.netrw_banner = 0
 
 vim.api.nvim_set_keymap('n', '<leader>e', ':Explore<CR>', { noremap = true, silent = true })
 

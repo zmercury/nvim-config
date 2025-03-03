@@ -7,8 +7,8 @@ return {
       local custom_theme = {
         normal = {
           a = { fg = '#ffffff', bg = '#2a9d8f', gui = 'bold' },
-          b = { fg = '#2a9d8f', bg = '#1e1e2e' },
-          c = { fg = '#d4d4d4', bg = '#1e1e2e' },
+          b = { fg = '#2a9d8f', bg = '#122b1b' },
+          c = { fg = '#d4d4d4', bg = '#122b1b' },
         },
         insert = {
           a = { fg = '#ffffff', bg = '#e06c75', gui = 'bold' },
