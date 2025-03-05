@@ -10,17 +10,6 @@ vim.api.nvim_create_user_command('Runcs', function()
   end
 end, { nargs = 0 })
 
-vim.api.nvim_create_user_command('Createcs', function()
-  local file_dir = vim.fn.expand '%:p:h'
-  local cmd = 'cd ' .. file_dir .. ' && dotnet new console --use-program-main true'
-  local success, result = pcall(function()
-    vim.cmd('!' .. cmd)
-  end)
-  if not success then
-    vim.notify('Failed to run dotnet: ' .. tostring(result), vim.log.levels.ERROR)
-  end
-end, { nargs = 0 })
-
 -- Function to open PowerShell in the current file's directory in a horizontal split
 local function open_powershell_in_current_dir()
   local current_file_dir = vim.fn.expand '%:p:h'
