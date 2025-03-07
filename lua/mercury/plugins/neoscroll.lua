@@ -5,9 +5,9 @@ return {
     local neoscroll = require 'neoscroll'
     neoscroll.setup {
       -- Optional: Customize animation settings
-      easing_function = 'quadratic', -- Smooth animation curve (options: "linear", "quadratic", "cubic", etc.)
+      easing_function = 'linear', -- Smooth animation curve (options: "linear", "quadratic", "cubic", etc.)
       time = 75, -- Animation duration in milliseconds
-      stop_eof = true, -- Stop at end of file
+      stop_eof = false, -- Stop at end of file
       hide_cursor = true, -- Hide cursor during scroll
     }
 
