@@ -7,6 +7,7 @@ require('lazy').setup({
   require 'mercury/plugins/snippets',
   require 'mercury/plugins/harpoon',
   require 'mercury/plugins/lualine',
+  require 'mercury/plugins/neoscroll',
   require 'mercury/plugins/gitsigns',
   require 'mercury/plugins/markdown',
   require 'mercury/plugins/telescope',
