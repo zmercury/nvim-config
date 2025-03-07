@@ -73,7 +73,4 @@ vim.keymap.set('n', '$$', '$A', { noremap = true, silent = true })
 vim.keymap.set('i', '$$', '<ESC>A', { noremap = true, silent = true })
 
 -- custom command for comments in c#
-vim.keymap.set('x', '<Leader>/', function()
-  vim.cmd [[normal! gvO]]
-  vim.api.nvim_input 'i/**<CR>**/<Esc>gvO'
-end, { desc = 'Wrap selection with /** and **/' })
+vim.keymap.set('n', '<leader>c', '0wi//<Esc>', { noremap = true, silent = true })
